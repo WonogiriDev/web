@@ -3,24 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatMenuModule } from '@angular/material';
+import { ComponentsModule } from './components/components.module';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    MaterialModule,
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
