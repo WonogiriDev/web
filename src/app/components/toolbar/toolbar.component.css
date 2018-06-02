@@ -5,3 +5,20 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+#banner {
+  text-decoration: none;
+  color: white;
+}
+
+span.logo {
+  display: inherit
+}
+
+span.logo img {
+  margin-right: 5px;
+}
+
+button {
+  color: white;
+}
