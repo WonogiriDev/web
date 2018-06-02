@@ -1,0 +1,14 @@
+div.body {
+  padding: 10px;
+}
+
+div.text {
+  margin-top: 20px;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h5#author {
+  color: rgb(87, 87, 87);
+}

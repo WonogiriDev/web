@@ -1,3 +1,13 @@
-<p>
-  feed-detail works!
-</p>
+<div class="body">
+  <h3>{{ item.title }}</h3>
+  <div id="author">
+    <h6>{{ item.author }}</h6>
+    <p>{{item.pubDate | date: 'dd MMMM yyy h:m'}}</p>
+  </div>
+  <div class="text">
+    <p>
+      <span [innerHTML]="item.content"></span>
+      <!-- {{ item.content }} -->
+    </p>
+  </div>
+</div>
