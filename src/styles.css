@@ -2,6 +2,10 @@
 
 body { margin: 0; }
 
+.container {
+  margin-top: 75px;
+}
+
 img {
   max-width: 100% !important;
 }
