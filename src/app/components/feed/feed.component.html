@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="card-columns">
+    <div class="card" *ngFor="let item of items; let i = index">
+      <img class="card-img-top" [src]="item.thumbnail" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <!-- <p class="card-text">
+          <span [innerHTML]="item.description"></span>
+        </p> -->
+          <a [routerLink]="['/detail', i]" class="btn btn-primary btn-sm">Baca selengkapnya..</a>
+      </div>
+    </div>
+  </div>
+</div>

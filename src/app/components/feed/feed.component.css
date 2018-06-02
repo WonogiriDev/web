@@ -1,0 +1,11 @@
+.container {
+  margin-top: 10px;
+}
+
+.card {
+  min-height: 23rem;
+}
+
+a {
+  color: #fff !important;
+}

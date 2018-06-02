@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   
-  constructor() {}
+  constructor(private appService: AppService) {}
   
   ngOnInit() {
-    
+    this.getAllFeed()
+  }
+
+  getAllFeed() {
+    this.appService.getFeeds().subscribe(async res => {
+      await localStorage.setItem('data-wonogiridev', JSON.stringify(res))
+    })
   }
 }
